@@ -6,7 +6,7 @@ std::string rgb_to_hex(int r, int g, int b)
 {
     r = std::max(0, std::min(255, r));
     g = std::max(0, std::min(255, g));
-    d = std::max(0, std::min(255, b));
+    b = std::max(0, std::min(255, b));
 
     std::stringstream ss;
     ss << std::uppercase << std::hex << std::setfill('0')
