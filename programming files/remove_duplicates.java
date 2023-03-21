@@ -6,6 +6,7 @@ public class remove_duplicates {
 
     public static List<Integer> removeDuplicates(List<Integer> arr, List<Integer> removedElements) {
         List<Integer> uniqueArr = new ArrayList<>();
+        //loop through the list of ints, if it's contained in the list somehwere else add it to the removed elements list, otherwise add it to the unique list
         for (int i = 0; i < arr.size(); i++) {
             if (!uniqueArr.contains(arr.get(i))) {
                 uniqueArr.add(arr.get(i));
