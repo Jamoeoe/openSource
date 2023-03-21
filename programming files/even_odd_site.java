@@ -6,7 +6,8 @@ public class even_odd_site {
         BufferedWriter file = new BufferedWriter(new FileWriter("numbers.html"));
         file.write("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n");
         file.write("<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n");
-        for (int i = 1; i < 50; i++) {
+        //Missing an equals sign so that 50 prints out
+        for (int i = 1; i <= 50; i++) {
             if (i % 1 == 0) {
                 file.write("<tr><td>" + i + "</td><td></td></tr>\n");
             }
