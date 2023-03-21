@@ -8,7 +8,8 @@ public class even_odd_site {
         file.write("<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n");
         //Missing an equals sign so that 50 prints out
         for (int i = 1; i <= 50; i++) {
-            if (i % 1 == 0) {
+            //Changed the i % 1 to i % 2 so that the even/odd sorting works properly
+            if (i % 2 == 0) {
                 file.write("<tr><td>" + i + "</td><td></td></tr>\n");
             }
             else {
