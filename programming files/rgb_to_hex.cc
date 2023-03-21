@@ -4,7 +4,7 @@
 
 std::string rgb_to_hex(int r, int g, int b)
 {
-    r = max(0, std::min(255, r));
+    r = std::max(0, std::min(255, r));
     g = std::max(0, std::min(255, g));
     d = std::max(0, std::min(255, b));
 
